@@ -1,4 +1,4 @@
-# Ubuntu Disk Partitioning and Mounting Case Study
+# Ty Case Study
 
 ## Overview
 This case study demonstrates the process of adding and mounting a new disk (`/dev/sdb`) in an Ubuntu system.
