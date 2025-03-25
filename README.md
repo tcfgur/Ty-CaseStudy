@@ -401,7 +401,7 @@ ceph osd pool application enable case_study rbd
 
 ### Erasure Coded Pool
 ```bash
-ceph osd erasure-code-profile set fatih_policy_ec k=8 m=2 crush-failure-domain=host
+ceph osd erasure-code-profile set fatih_policy_ec k=2 m=1 crush-failure-domain=host
 ceph osd pool create my_ec_pool 64 64 erasure fatih_policy_ec
 ceph osd pool application enable my_ec_pool rgw
 ```
@@ -415,6 +415,22 @@ ceph osd pool application enable my_ec_pool rgw
 ### Cluster Status
 ```bash
 ceph -s
+
+  cluster:
+    id:     198ef468-0694-11f0-9099-d7628b21ba67
+    health: HEALTH_OK
+
+  services:
+    mon: 3 daemons, quorum ubuntu01,ubuntu02,ubuntu03 (age 25h)
+    mgr: ubuntu01.iwjidf(active, since 25h), standbys: ubuntu02.wuifuw, ubuntu03.jeixqg
+    osd: 30 osds: 30 up (since 3d), 30 in (since 3d)
+
+  data:
+    pools:   3 pools, 129 pgs
+    objects: 2 objects, 449 KiB
+    usage:   1.9 GiB used, 2.9 TiB / 2.9 TiB avail
+    pgs:     129 active+clean
+
 ```
 
 ### Pool Detail
