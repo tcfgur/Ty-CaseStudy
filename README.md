@@ -74,6 +74,21 @@ Add the following line at the end of the file:
 ### 10. Verify Mounting on Reboot
 ```sh
 lsblk
+NAME                      MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+loop0                       7:0    0 89.4M  1 loop /snap/lxd/31333
+loop1                       7:1    0 63.9M  1 loop /snap/core20/2318
+loop2                       7:2    0   87M  1 loop /snap/lxd/29351
+loop3                       7:3    0 44.4M  1 loop /snap/snapd/23771
+loop4                       7:4    0 38.8M  1 loop /snap/snapd/21759
+loop6                       7:6    0 63.7M  1 loop /snap/core20/2496
+sda                         8:0    0   80G  0 disk
+├─sda1                      8:1    0    1M  0 part
+├─sda2                      8:2    0    2G  0 part /boot
+└─sda3                      8:3    0   78G  0 part
+  └─ubuntu--vg-ubuntu--lv 253:0    0   78G  0 lvm  /
+sdb                         8:16   0    1T  0 disk
+└─sdb1                      8:17   0 1024G  0 part
+sr0                        11:0    1 1024M  0 rom
 ```
 
 ## Conclusion
