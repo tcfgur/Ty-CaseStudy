@@ -334,9 +334,8 @@ done
 
 ---
 
-### OSD Tree
-```bash
-ceph osd tree
+### Ceph OSD Tree Output
+
 ```
 ID  CLASS  WEIGHT   TYPE NAME          STATUS  REWEIGHT  PRI-AFF
 -1         2.93060  root default
@@ -373,8 +372,8 @@ ID  CLASS  WEIGHT   TYPE NAME          STATUS  REWEIGHT  PRI-AFF
 27    hdd  0.09769          osd.27         up   1.00000  1.00000
 28    hdd  0.09769          osd.28         up   1.00000  1.00000
 29    hdd  0.09769          osd.29         up   1.00000  1.00000
-root@ubuntu01:/#
----
+```
+
 
 
 ## Pool Creation
