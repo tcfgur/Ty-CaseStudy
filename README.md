@@ -272,7 +272,6 @@ This document outlines the full lifecycle of a Ceph cluster setup using Cephadm 
 - Host configuration and key setup
 - OSD provisioning with loopback devices
 - Pool creation (replicated + erasure coded)
-- Application enablement
 - Version validation
 - Selective upgrade of Mon and Mgr daemons to Squid (v19.x)
 
