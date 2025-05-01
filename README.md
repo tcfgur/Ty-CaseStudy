@@ -1,4 +1,4 @@
-# Ty Case Study
+# Cephadm Case Study
 
 ## Overview
 This case study demonstrates the process of setting up loopback devices for Ceph installation, configuring automatic activation of disks on boot, and performing a Ceph Reef deployment using Cephadm. Additionally, it covers creating pools with replication factor 3 and EC pool for fault tolerance, and upgrading Ceph services to the Squid version for monitor and manager nodes.
