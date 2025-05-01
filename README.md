@@ -296,13 +296,13 @@ This document outlines the full lifecycle of a Ceph cluster setup using Cephadm 
 
 ### Copy SSH Public Key to Hosts
 ```bash
-ssh-copy-id -f -i /root/.ssh/cephadm_rsa.pub trendyol@172.25.0.92
-ssh-copy-id -f -i /root/.ssh/cephadm_rsa.pub trendyol@172.25.0.93
+ssh-copy-id -f -i /root/.ssh/cephadm_rsa.pub xxxxx@172.25.0.92
+ssh-copy-id -f -i /root/.ssh/cephadm_rsa.pub xxxxx@172.25.0.93
 ```
 
 ### Authorize Root on Each Host
 ```bash
-cp -p /home/trendyol/.ssh/authorized_keys /root/.ssh/authorized_keys
+cp -p /home/xxxxx/.ssh/authorized_keys /root/.ssh/authorized_keys
 chown root:root /root/.ssh/authorized_keys
 ```
 
